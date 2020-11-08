@@ -19,6 +19,10 @@ export class QuotesComponent implements OnInit {
   quoteDelete(index){
     this.quotes.splice(index, 1);
   }
+  // tslint:disable-next-line:typedef
+  addNewQuote(quote){
+    this.quotes.push(quote);
+  }
   constructor() { }
 
   ngOnInit(): void {
