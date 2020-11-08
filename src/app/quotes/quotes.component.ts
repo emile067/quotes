@@ -9,8 +9,9 @@ export class QuotesComponent implements OnInit {
   constructor() { this.maxCalc(); }
 
   quotes: Quote[] = [
-    new Quote('QuoteBook', ' Everyone thinks of changing the world, but no one thinks of changing himself. ', 'unkown', 6, new Date()),
-    new Quote('QuoteBook', 'Be the change that you wish to see in the world.', 'unkown', 3, new Date()),
+    // tslint:disable-next-line:max-line-length
+    new Quote('QuoteBook', ' Everyone thinks of changing the world, but no one thinks of changing himself. ', 'Unkown author', 6, new Date()),
+    new Quote('QuoteBook', 'Be the change that you wish to see in the world.', 'Unkown author', 3, new Date()),
   ];
   maxVotes: number;
 

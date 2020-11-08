@@ -4,8 +4,11 @@
     <div class="card w-75" *ngFor="let quote of quotes;let i = index" >
       <div class="card-body">
         <div (click)='toggleDetails(i)'>
-        <h5 class="card-title">{{quote.name}}</h5>
-        <p class="card-text">{{quote.content}}</p>
+        <h5 class="card-title">{{quote.author}}</h5>
+        <p class="card-text">
+          {{quote.content}}<br>
+          <small>click to see details</small>
+        </p>
         <div class="alert alert-success" role="alert" *ngIf='quote.vote == maxVotes'>
           Ranked with the highest votes
         </div>
