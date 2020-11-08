@@ -8,10 +8,17 @@ import { Quote } from './../quote';
 export class QuotesComponent implements OnInit {
 
   quotes: Quote[] = [
-    new Quote('QuoteBook', ' ', 'Emile'),
-    new Quote('QuoteBook', ' ', 'Emile'),
+    new Quote('QuoteBook', ' what goes around comes around ', 'Emile'),
+    new Quote('QuoteBook', ' what goes around comes around ', 'Emile'),
   ];
-
+  // tslint:disable-next-line:typedef
+  toggleDetails(index){
+    this.quotes[index].showDetails = !this.quotes[index].showDetails;
+  }
+  // tslint:disable-next-line:typedef
+  quoteDelete(index){
+    this.quotes.splice(index, 1);
+  }
   constructor() { }
 
   ngOnInit(): void {

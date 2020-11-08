@@ -2,6 +2,8 @@
   <div class="card-body">
     <h5 class="card-title">{{quote.name}}</h5>
     <p class="card-text">{{quote.content}}</p>
+    <button (click)='toggleDetails(i)'>Toggle Details</button>
+    <button (click)= 'quoteDelete(i)'>Delete</button>
   </div>
-  <app-quote-actions></app-quote-actions>
+  <app-quote-actions *ngIf='quote.showDetails' [quote]='quote'></app-quote-actions>
 </div>
