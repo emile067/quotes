@@ -11,6 +11,7 @@ export class QuotesComponent implements OnInit {
     new Quote('QuoteBook', ' ', 'Emile'),
     new Quote('QuoteBook', ' ', 'Emile'),
   ];
+
   constructor() { }
 
   ngOnInit(): void {
