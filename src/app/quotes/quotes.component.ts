@@ -20,10 +20,10 @@ export class QuotesComponent implements OnInit {
     this.quotes[index].showDetails = !this.quotes[index].showDetails;
   }
   // tslint:disable-next-line:typedef
- maxCalc(){
-// tslint:disable-next-line:typedef
-  this.maxVotes = Math.max.apply(Math, this.quotes.map(function(o) { return o.vote; }));
-}
+  maxCalc(){
+    // tslint:disable-next-line:typedef
+    this.maxVotes = Math.max.apply(Math, this.quotes.map(function(o) { return o.vote; }));
+  }
   // tslint:disable-next-line:typedef
   quoteDelete(index){
     this.quotes.splice(index, 1);

@@ -14,7 +14,7 @@ export class QuoteFormComponent implements OnInit {
 
   // tslint:disable-next-line:typedef
   submitQuote(){
-this.addQuote.emit(this.newQuote);
+    this.addQuote.emit(this.newQuote);
   }
   constructor() { }
 
