@@ -1,9 +1,8 @@
-<div class="card w-75" *ngFor="let quote of quotes;let i = index">
+<div class="card w-75" *ngFor="let quote of quotes;let i = index" (click)='toggleDetails(i)'>
   <div class="card-body">
     <h5 class="card-title">{{quote.name}}</h5>
     <p class="card-text">{{quote.content}}</p>
-    <button (click)='toggleDetails(i)'>Toggle Details</button>
-    <button (click)= 'quoteDelete(i)'>Delete</button>
+    <button class="btn btn-danger" (click)= 'quoteDelete(i)'>Delete</button>
   </div>
   <app-quote-actions *ngIf='quote.showDetails' [quote]='quote'></app-quote-actions>
 </div>
