@@ -12,7 +12,7 @@
       </div>
         <button type="button" class="btn btn-success" (click)='upVote(i)'>Upvote</button>
         <button type="button" class="btn btn-warning" (click)='downVote(i)'>DownVote</button>
-        <button class="btn btn-danger" (click)= 'quoteDelete(i)'>Delete</button>
+        <button class="btn btn-danger float-right" (click)= 'quoteDelete(i)'>Delete</button>
       </div>
       <app-quote-actions *ngIf='quote.showDetails' [quote]='quote'></app-quote-actions>
     </div>
