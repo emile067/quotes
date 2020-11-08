@@ -10,6 +10,7 @@ QuotesBook App is for posting various quotes from yoyr favourite authors and rat
 ## Known Bugs
 * time only counts from 1 day
 * directive failure
+* creation of empty quotes
 ## Technologies Used
 * Angular CLI
 * HTML
