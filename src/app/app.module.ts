@@ -4,11 +4,13 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { QuotesComponent } from './quotes/quotes.component';
+import { QuoteActionsComponent } from './quotes/quote-actions/quote-actions.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    QuotesComponent
+    QuotesComponent,
+    QuoteActionsComponent
   ],
   imports: [
     BrowserModule,
