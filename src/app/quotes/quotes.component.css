@@ -1,0 +1,10 @@
+#form-div{
+  position: fixed;
+  max-width: 40%;
+  top: 15%;
+}
+#quote-div{
+  position: absolute;
+  left: 40%;
+  top: 15%;
+}

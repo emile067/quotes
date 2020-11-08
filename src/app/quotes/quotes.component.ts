@@ -9,8 +9,8 @@ export class QuotesComponent implements OnInit {
   constructor() { this.maxCalc(); }
 
   quotes: Quote[] = [
-    new Quote('QuoteBook', ' what goes around comes around ', 'Emile', 6),
-    new Quote('QuoteBook', ' what goes around comes around ', 'Emile', 3),
+    new Quote('QuoteBook', ' what goes around comes around ', 'Emile', 6, new Date()),
+    new Quote('QuoteBook', ' what goes around comes around ', 'Emile', 3, new Date()),
   ];
   maxVotes: number;
 

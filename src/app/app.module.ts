@@ -8,6 +8,7 @@ import { QuotesComponent } from './quotes/quotes.component';
 import { QuoteActionsComponent } from './quotes/quote-actions/quote-actions.component';
 import { QuoteFormComponent } from './quote-form/quote-form.component';
 import { MaxVotedDirective } from './max-voted.directive';
+import { TimeCountPipe } from './time-count.pipe';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { MaxVotedDirective } from './max-voted.directive';
     QuotesComponent,
     QuoteActionsComponent,
     QuoteFormComponent,
-    MaxVotedDirective
+    MaxVotedDirective,
+    TimeCountPipe
   ],
   imports: [
     BrowserModule,
