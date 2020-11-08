@@ -1,1 +1,7 @@
-<p>quotes works!</p>
+<div class="card bg-light mb-3" style="max-width: 18rem;" *ngFor="let quote of quotes;let i = index">
+  <div class="card-body">
+    <h5 class="card-title">{{quote.name}}</h5>
+    <p class="card-text">{{quote.content}}</p>
+    <small>author:{{quote.author}}</small>
+  </div>
+</div>
