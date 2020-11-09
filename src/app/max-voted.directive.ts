@@ -1,10 +1,10 @@
-import { Directive, HostListener, ElementRef } from '@angular/core';
+import { Directive } from '@angular/core';
 
 @Directive({
   selector: '[appMaxVoted]'
 })
 export class MaxVotedDirective {
 
-constructor(private elem: ElementRef){}
+  constructor() { }
 
 }
